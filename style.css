@@ -272,6 +272,16 @@ footer {
   border: 4px solid black;
 }
 
+.form-row textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-family: 'Poppins', sans-serif;
+  resize: vertical;
+  min-height: 80px;
+}
+
 /* ==== RESPONSIVE (MOBILE) ==== */
 @media (max-width: 768px) {
   /* This is a corrected and cleaner version of our mobile media query */
