@@ -139,6 +139,9 @@ section p {
 }
 
 /* ==== EDUCATION SECTION ==== */
+#education {
+  background-color: #e9e9e9;
+}
 #education ul {
   list-style-type: none; /* This removes the dots, which was an issue in our previous code */
   padding: 0;
@@ -150,6 +153,7 @@ section p {
 }
 
 /* ==== PROJECTS ==== */
+
 .project {
   background: white;
   padding: 30px;
@@ -188,7 +192,7 @@ section p {
 }
 
 .project-button:hover {
-  background-color: #333;
+  background-color: #ff8001;
 }
 
 /* ==== CONTACT FORM ==== */
