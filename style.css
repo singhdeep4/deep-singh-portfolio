@@ -337,9 +337,9 @@ h2 {
     }
     
     /* Display the links when the menu is active */
-    nav ul.active {
-        display: flex;
-    }
+   nav ul.active {
+    display: flex !important; /* The !important keyword forces the rule to be applied */
+  }
 
     /* Adjust padding for mobile links */
     nav ul li {
