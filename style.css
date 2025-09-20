@@ -66,6 +66,7 @@ section {
   padding: 60px 20px;
   max-width: 1000px;
   margin: auto;
+  text-align: center;
 }
 
 section h2 {
@@ -90,7 +91,7 @@ section p {
   padding: 30px; /* Increased padding for more space */
   margin: 20px 0; /* Adjusted margin */
   border-radius: 12px; /* Slightly more rounded corners */
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Deeper shadow for a 3D effect */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15); /* Deeper shadow for a 3D effect */
   transition: transform 0.4s ease; /* A cool hover effect! */
 }
 
@@ -141,6 +142,10 @@ footer {
   }
 }
 
+#education ul {
+  list-style-type: none;
+  padding: 0;
+}
 
 /* Logo section */
 .logo {
@@ -171,7 +176,7 @@ footer {
 }
 
 .social-links {
-  margin-top: 10px;
+  margin-top: 40px;
   text-align: center;
 }
 
@@ -202,6 +207,7 @@ footer {
 }
 
 .about-photo {
+
   width: 200px;
   height: 200px;
   border-radius: 50%;
@@ -209,6 +215,60 @@ footer {
   margin-bottom: 20px;
   border: 3px solid     #000000; /* A pop of color */
 }
+
+#about p {
+  font-style: italic;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  margin: auto;
+  gap: 20px; /* Increased gap for better spacing between rows */
+}
+
+/* This is the key rule for the horizontal layout */
+.form-row {
+  display: flex;
+  align-items: center; /* Vertically centers the items in the row */
+  gap: 20px;
+}
+
+form label {
+  font-weight: 600;
+  /* We'll set a fixed width for the labels so they all align perfectly */
+  width: 120px; 
+}
+
+form input, form textarea {
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-family: 'Poppins', sans-serif;
+  width: 100%; /* Make inputs take up the remaining space */
+}
+
+/* The textarea should span the full width of the form */
+.form-row textarea {
+  width: calc(100% - 120px - 20px); /* This calculates the correct width based on label width and gap */
+}
+
+form button {
+  background-color: black;
+  color: white;
+  padding: 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+form button:hover {
+  background-color: #ff8c00;
+}
+
 
 
 
