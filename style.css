@@ -1,0 +1,258 @@
+/* ==== RESET STYLES ==== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f5f5f5;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* ==== HEADER & NAVBAR ==== */
+header {
+  background: #111;
+  color: white;
+  padding: 15px 30px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav h1 {
+  font-size: 24px;
+}
+
+/* Navbar links */
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  transition: 0.3s;
+}
+
+nav ul li a:hover {
+  color: #ff9800;
+}
+
+/* ==== HAMBURGER MENU (MOBILE) ==== */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.menu-toggle div {
+  width: 25px;
+  height: 3px;
+  background: white;
+  margin: 4px 0;
+}
+
+/* ==== MAIN SECTIONS ==== */
+section {
+  padding: 60px 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+section h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #222;
+}
+
+section p {
+  text-align: center;
+  max-width: 800px;
+  margin: auto;
+}
+
+
+
+
+/* ==== PROJECTS ==== */
+
+.project {
+  background: white;
+  padding: 30px; /* Increased padding for more space */
+  margin: 20px 0; /* Adjusted margin */
+  border-radius: 12px; /* Slightly more rounded corners */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Deeper shadow for a 3D effect */
+  transition: transform 0.4s ease; /* A cool hover effect! */
+}
+
+/* Add a hover effect to make the cards interactive */
+.project:hover {
+  transform: translateY(-5px); /* Moves the card up slightly on hover */
+}
+
+.project h3 {
+  color: #2c3e50; /* A darker, more professional color for headings */
+  margin-bottom: 10px;
+}
+
+.project p {
+  color: #8d7f7f; /* A lighter color for the description */
+  text-align: left; /* Aligns the text to the left within the card */
+  margin: 0;
+}
+
+/* ==== FOOTER ==== */
+footer {
+  background: #111;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+
+/* ==== RESPONSIVE ==== */
+@media (max-width: 768px) {
+  nav ul {
+    display: none;
+    flex-direction: column;
+    background: #111;
+    position: absolute;
+    top: 60px;
+    right: 30px;
+    width: 200px;
+    padding: 10px;
+    border-radius: 8px;
+  }
+
+  nav ul.active {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: flex;
+  }
+}
+
+
+/* Logo section */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* space between photo and name */
+}
+
+.logo img {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;   /* makes it a circle */
+  object-fit: cover;    /* keeps image nicely cropped */
+  border: 2px solid white;
+}
+
+.profile-photo {
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+  object-fit: cover;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 15px; /* Adds space between the photo and the name */
+}
+
+.social-links {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.social-links a {
+  color: #333;
+  font-size: 30px;
+  margin: 0 15px;
+  transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+  color: #ff9800; /* Changes color on hover */
+}
+
+.project-button {
+  display: inline-block;
+  background-color: #1c1b1b;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 15px;
+  transition: background-color 0.5s;
+}
+
+.project-button:hover {
+  background-color: #e68a00;
+}
+
+
+
+
+
+
+
+/* For Mobiles */
+/* --- Hamburger Menu Icon Styling --- */
+.menu-toggle {
+    display: none; /* Hide by default on desktop */
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+    cursor: pointer;
+}
+
+.menu-toggle .bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+/* --- Mobile Responsiveness --- */
+@media (max-width: 768px) {
+    /* Show the hamburger menu icon on screens smaller than 768px */
+    .menu-toggle {
+        display: flex;
+    }
+
+    /* Hide the navigation links by default on mobile */
+    nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        position: absolute;
+        top: 60px; /* Position it below the header */
+        left: 0;
+        background-color: #111;
+        padding: 20px 0;
+        border-top: 1px solid #333;
+    }
+    
+    /* Display the links when the menu is active */
+    nav ul.active {
+        display: flex;
+    }
+
+    /* Adjust padding for mobile links */
+    nav ul li {
+        margin: 10px 0;
+    }
+}
