@@ -19,6 +19,7 @@ header {
   padding: 15px 30px;
 }
 
+
 nav {
   display: flex;
   justify-content: space-between;
@@ -200,6 +201,15 @@ footer {
   background-color: #e68a00;
 }
 
+.about-photo {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+  border: 3px solid     #000000; /* A pop of color */
+}
+
 
 
 
@@ -223,6 +233,26 @@ footer {
     background-color: white;
     border-radius: 10px;
     transition: all 0.3s ease-in-out;
+}
+
+.vanta-canvas {
+  border: 2px solid black;
+}
+
+#about {
+  background-color: #f8f8f8; /* A light gray background */
+  padding: 80px 20px; /* Add more padding for space */
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  /* ... other body styles ... */
+}
+
+h2 {
+  font-size: 2.5em; /* Make the headings larger */
+  font-weight: 600; /* Make the headings bolder */
+  margin-bottom: 30px;
 }
 
 /* --- Mobile Responsiveness --- */

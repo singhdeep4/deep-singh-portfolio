@@ -6,7 +6,12 @@
   <title>My Portfolio</title>
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.birds.min.js"></script>
 
+  
 </head>
 <body>
   <!-- Navigation -->
@@ -42,24 +47,27 @@
 
   <!-- Hero Section -->
   <section id="home" class="hero">
-    <h2>Hello, I'm Deep Singh</h2>
-    <p>A passionate student learning tech & building projects.</p>
-  </section>
+    <div class="hero-content">
+        <h2>Hello, I'm Deep Singh</h2>
+        <p>A passionate student learning tech & building projects.</p>
+    </div>
+</section>
 
   <!-- About Section -->
   <section id="about">
-    <h2>About Me</h2>
-    <p>I studied at St.Joseph's High School and did my 11th & 12th from Shree L.R Tiwari Junior College and currently pursuing B.Tech From IoT ...</p>
-  </section>
+  <h2>About Me</h2>
+  <img src="My_photo.jpg" alt="Deep Singh" class="about-photo">
+  <p>I studied at St.Joseph's High School and did my 11th & 12th from Shree L.R Tiwari Junior College and currently pursuing B.Tech From IoT ...</p>
+</section>
 
   <!-- Education -->
   <section id="education">
     <h2>Education</h2>
     <ul>
-      <li>Bachelor’s in Internet of Things (IoT) - Thakur College of Engineering and Technology</li>
-      <li>Higher Secondary - Shree L.r Tiwari Junior College </li>
+      <li><i class="fas fa-graduation-cap"></i> Bachelor’s in Computer Science - IoT</li>
+      <li><i class="fas fa-book"></i> Higher Secondary - Shree Lr Tiwari Junior College</li>
     </ul>
-  </section>
+</section>
 
   <!-- Projects -->
   <section id="projects">
@@ -95,6 +103,21 @@
   <footer>
     <p>© 2025 Deep Singh | All Rights Reserved</p>
   </footer>
+
+  
+   <script>
+    VANTA.BIRDS({
+      el: "#home", // This will target your hero section with the ID "home"
+      mouseControls: true,
+      touchControls: true,
+      gyroControls: false,
+      minHeight: 200.00,
+      minWidth: 200.00,
+      scale: 1.00,
+      scaleMobile: 1.00,
+      backgroundColor: 0x98b7d4
+    })
+  </script>
 
   <script src="script.js"></script>
 </body>
