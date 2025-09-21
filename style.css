@@ -285,6 +285,32 @@ footer {
   resize: vertical;
   min-height: 80px;
 }
+/* ==== Back to Top Button ==== */
+
+.back-to-top-btn {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(135deg, #090807 0%, #535050 100%);
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 1000;
+  box-shadow: 0 6px 18px rgba(255, 255, 255, 0.18);
+  transition: background 0.3s, transform 0.3s;
+  text-align: center;
+}
+
+.back-to-top-btn:hover {
+    background-color: #ff8000;
+}
 
 /* ==== RESPONSIVE (MOBILE) ==== */
 @media (max-width: 768px) {
