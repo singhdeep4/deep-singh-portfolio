@@ -10,6 +10,10 @@
   
   <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.birds.min.js"></script>
+  
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">  <!--Scroll effect link-->
+
+</head>
 </head>
 <body>
   <header>
@@ -40,7 +44,7 @@
     </div>
   </section>
 
-  <section id="about">
+  <section id="about" data-aos="fade-up">
   <h2>About Me</h2>
   <img src="My_photo.jpg" alt="Deep Singh" class="about-photo">
   <p>Hi, I’m Deep Singh, proudly hailing from India, a land of rich heritage and endless possibilities. My educational journey began at St. Joseph's High School, followed by Shree L.R. Tiwari Junior College, where I discovered my passion for technology and innovation. I am currently pursuing B.Tech in Internet of Things (IoT) at Thakur College of Engineering and Technology, driven to create smart, connected solutions that make a meaningful impact.
@@ -48,7 +52,7 @@
 <p>I am passionate about technology, innovation, and problem-solving, and I love to explore new ideas, learn new skills, and challenge myself. I believe that curiosity fuels growth, and I am always in eager to do experiment, create, and push the boundaries of what’s possible in the world of tech. </p>
 </section>
 
-  <section id="education">
+  <section id="education" data-aos="fade-up">
     <h2>Education</h2>
     <ul>
       <li><i class="fas fa-graduation-cap"></i> Bachelor’s in Computer Science - IoT - From TCET</li>
@@ -56,7 +60,7 @@
     </ul>
 </section>
 
-  <section id="projects">
+  <section id="projects" data-aos="fade-up">
     <h2>Projects</h2>
     <div class="project">
       <h3>My Website</h3>
@@ -75,7 +79,7 @@
     </div>
   </section>
 
-  <section id="contact">
+  <section id="contact" data-aos="fade-up">
   <h2>Contact Me</h2>
   <form action="https://formspree.io/f/xzzanodz" method="POST">
     <div class="form-row">
@@ -129,5 +133,9 @@
     })
   </script>
 <script src="script.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>
